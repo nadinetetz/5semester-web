@@ -803,10 +803,10 @@ function updateProjekt($bid) {
 }
 
 function getConnection() {
-	$dbhost = "dbhost";
-	$dbuser = "dbuser";
-	$dbpass = "dbpass";
-	$dbname = "dbname";
+	$dbhost = "hoast";
+	$dbuser = "user";
+	$dbpass = "passwd";
+	$dbname = "name";
 	$dbh = new PDO("pgsql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
 	$dbh -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	return $dbh;
